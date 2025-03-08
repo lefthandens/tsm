@@ -16,6 +16,7 @@ export function NavMain({ items = [] }: { items: NavItem[] }) {
                                 <span>{item.title}</span>
                             </Link>
                         </SidebarMenuButton>
+                        
                     </SidebarMenuItem>
                 ))}
             </SidebarMenu>

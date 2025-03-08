@@ -11,6 +11,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
+
+    Route::get('masterlist', function () {
+        return Inertia::render('masterlist');
+    })->name('masterlist');
 });
 
 require __DIR__.'/settings.php';
