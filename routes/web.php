@@ -12,9 +12,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
 
-    Route::get('masterlist', function () {
-        return Inertia::render('masterlist');
-    })->name('masterlist');
+    Route::get('competitions', function () {
+        return Inertia::render('competitions/index');
+    })->name('competitions');
 });
 
 require __DIR__.'/settings.php';
