@@ -30,6 +30,7 @@ export default function Competitions() {
         e.preventDefault();
 
         console.log(data.name);
+    
         // post(route('register'), {
         //     onFinish: () => reset('name', 'username'),
         // });
@@ -60,13 +61,25 @@ export default function Competitions() {
                                             <Label htmlFor="name" className="text-right">
                                                 Name
                                             </Label>
-                                            <Input id="name" value={data.name}  onChange={(e) => setData('name', e.target.value)}  placeholder="Search..." className="col-span-3" />
+                                            <Input
+                                                id="name"
+                                                value={data.name}
+                                                onChange={(e) => setData('name', e.target.value)}
+                                                placeholder="Search..."
+                                                className="col-span-3"
+                                            />
                                         </div>
                                         <div className="grid grid-cols-4 items-center gap-4">
                                             <Label htmlFor="username" className="text-right">
                                                 Username
                                             </Label>
-                                            <Input id="username" value={data.username} onChange={(e) => setData('username', e.target.value)} placeholder="Search..." className="col-span-3" />
+                                            <Input
+                                                id="username"
+                                                value={data.username}
+                                                onChange={(e) => setData('username', e.target.value)}
+                                                placeholder="Search..."
+                                                className="col-span-3"
+                                            />
                                         </div>
                                     </div>
                                     <DialogFooter>
@@ -81,7 +94,36 @@ export default function Competitions() {
                     </div>
                 </div>
                 <div className="border-sidebar-border/70 dark:border-sidebar-border relative min-h-[100vh] flex-1 overflow-hidden rounded-xl border md:min-h-min">
-                    <PlaceholderPattern className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" />
+                  
+                    <div>
+                        <Dialog>
+                            <DialogTrigger asChild>
+                                <Button variant="outline">Create Competition</Button>
+                            </DialogTrigger>
+                            <DialogContent className="sm:max-w-[425px]">
+                                <form className="flex flex-col gap-6" onSubmit={submit}>
+                                    <DialogHeader>
+                                        <DialogTitle>Create Competgagagaition</DialogTitle>
+                                        <DialogDescription>Makgagaga.</DialogDescription>
+                                    </DialogHeader>
+                                    <div className="grid gap-4 py-4">
+                                        <div className="grid grid-cols-4 items-center gap-4">
+                                         
+                                        </div>
+                                        <div className="grid grid-cols-4 items-center gap-4">
+                                         
+                                        </div>
+                                    </div>
+                                    <DialogFooter>
+                                        <Button type="submit" className="mt-2 w-full" tabIndex={5} disabled={processing}>
+                                            {processing && <LoaderCircle className="h-4 w-4 animate-spin" />}
+                                            Create account
+                                        </Button>
+                                    </DialogFooter>
+                                </form>
+                            </DialogContent>
+                        </Dialog>
+                    </div>
                 </div>
             </div>
         </AppLayout>
