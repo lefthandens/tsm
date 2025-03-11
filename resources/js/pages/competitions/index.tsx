@@ -21,7 +21,7 @@ type CreateCompeform = {
 };
 
 export default function Competitions() {
-    const { data, setData, post, processing, errors, reset } = useForm<Required<CreateCompeform>>({
+    const { data, setData, processing } = useForm<Required<CreateCompeform>>({
         name: '',
         username: '',
     });
