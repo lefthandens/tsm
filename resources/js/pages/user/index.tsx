@@ -10,8 +10,8 @@ import { LoaderCircle } from 'lucide-react';
 import { FormEventHandler } from 'react';
 const breadcrumbs: BreadcrumbItem[] = [
     {
-        title: 'Competitions',
-        href: '/competitions',
+        title: 'Users',
+        href: '/users',
     },
 ];
 
@@ -20,7 +20,7 @@ type CreateCompeform = {
     username: string;
 };
 
-export default function Competitions() {
+export default function Users() {
     const { data, setData, post, processing, errors, reset } = useForm<Required<CreateCompeform>>({
         name: '',
         username: '',
@@ -38,7 +38,7 @@ export default function Competitions() {
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title="Competitions" />
+            <Head title="Users" />
             <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4">
                 <div className="flex-inline flex w-full justify-between p-4">
                     <div>
