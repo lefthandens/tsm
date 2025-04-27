@@ -29,7 +29,7 @@ const footerNavItems: NavItem[] = [
     // {
     //     title: 'Repository',
     //     url: 'https://github.com/laravel/react-starter-kit',
-    //     icon: Folder,asdfasdfasdfasd
+    //     icon: Folder,asdfasdfasdfasdasdfasdfasdfa
     // },
     // {
     //     title: 'Documentation',
