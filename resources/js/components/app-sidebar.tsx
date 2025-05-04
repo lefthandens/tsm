@@ -35,7 +35,7 @@ const footerNavItems: NavItem[] = [
     //     title: 'Documentation',
     //     url: 'https://laravel.com/docs/starter-kits',
     //     icon: BookOpen,
-    // },sadfasfasdfasd
+    // },sadfasfasdfasdasdfasdfdas
 ];
 
 export function AppSidebar() {
